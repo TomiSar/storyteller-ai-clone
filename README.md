@@ -9,7 +9,9 @@
 
 - npx shadcn-ui@latest init
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## ShadCDN components
+
+- npx shadcn-ui@latest add button
 
 ## Getting Started
 
@@ -20,6 +22,8 @@ npm run dev
 # or
 yarn dev
 ```
+
+-
 
 ## Deploy on Vercel
 
