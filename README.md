@@ -12,6 +12,8 @@
 ## ShadCDN components
 
 - npx shadcn-ui@latest add button
+- npx shadcn-ui@latest add textarea
+- npx shadcn-ui@latest add select
 
 ## Getting Started
 
