@@ -21,10 +21,9 @@ function StoryWriter() {
   const [runFinished, setRunFinished] = useState<boolean | null>(null);
   const [currentTool, setCurrentTool] = useState('');
 
-  const runScript = async () => {
+  async function runScript() {
     setRunStarted(true);
-    setRunFinished(null);
-    setProgress('');
+    setRunFinished(false);
 
     const response = await fetch('/api/run-script', {
       method: 'POST',
@@ -35,14 +34,16 @@ function StoryWriter() {
     });
 
     if (response.ok && response.body) {
-      // Handle Streams from API
+      // Handle Streams from the API
+      // ...
       console.log('Streamiong started');
+      // ...
     } else {
       setRunFinished(true);
       setRunStarted(false);
       console.error('Failed to start streaming');
     }
-  };
+  }
 
   return (
     <div className='flex flex-col container'>
@@ -83,7 +84,7 @@ function StoryWriter() {
             {runFinished === null && (
               <>
                 <p className='animate-pulse mr-5'>
-                  Is waiting for you to generate a story above
+                  Is waiting for you to generate a Story above...
                 </p>
                 <br />
               </>

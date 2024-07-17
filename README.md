@@ -4,10 +4,16 @@
 
 - https://nextjs.org/docs
 - https://ui.shadcn.com/docs/installation/next
+- https://github.com/gptscript-ai/gptscript
+- https://docs.gptscript.ai/
+- https://nextjs.org/docs/app/building-your-application/routing/route-handlers
 
 ## Dependencies
 
 - npx shadcn-ui@latest init
+- winget install gptscript-ai.gptscript
+- gptscript github.com/gptscript-ai/llm-basics-demo
+- npm i @gptscript-ai/gptscript
 
 ## ShadCDN components
 
